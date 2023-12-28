@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="weather.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Klee+One&family=M+PLUS+Rounded+1c:wght@900&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <form class="searchBar" id="citySearch">
+          <input
+            type="text"
+            placeholder="enter a city"
+            required
+            id="search"
+            class="searchInput"
+          />
+        </form>
+        <h3 class="todayDate" id="currentDay">Sunday, 06 Aug</h3>
+        <p class="currentTime" id="currentTime">6:00pm</p>
+
+        <img src="img/sun.png" class="sunImg" />
+
+        <div class="weatherBlock">
+          <h2 class="city" id="cityChange">Los Angeles</h2>
+          <span class="temperatureSpan">
+            <span class="temp" id="temperature">17</span>
+            <span class="celsius" id="celsius">°C</span>
+            <span>
+              <span class="units"
+                >/<a href="#" id="fahrenheit" class="units">°F</a></span
+              >
+            </span>
+          </span>
+          <h4 class="weatherDesc">mostly sunny</h4>
+        </div>
+
+        <div class="atmosphere">
+          <div class="row justify-content-sm-center">
+            <div class="col col-sm-3 hLine">
+              <i class="bi bi-cloud-rain-heavy"></i>
+            </div>
+            <div class="col col-sm-3 hLine"><i class="bi bi-droplet"></i></div>
+            <div class="col col-sm-3"><i class="bi bi-wind"></i></div>
+          </div>
+          <div class="row justify-content-sm-center descNum">
+            <div class="col col-sm-3 hLine">1%</div>
+            <div class="col col-sm-3 hLine">68%</div>
+            <div class="col col-sm-3">8mph</div>
+          </div>
+        </div>
+
+        <div class="weekBox">
+          <div class="container week">
+            <div class="days sun">
+              <div class="day">Sun</div>
+              <div class="forecast">
+                <img src="img/cloud.png" class="weatherIcon" />64°
+              </div>
+            </div>
+            <div class="days mon">
+              <div class="day">Mon</div>
+              <div class="forecast">
+                <img src="img/sun1.png" class="weatherIcon" />80°
+              </div>
+            </div>
+            <div class="days tue">
+              <div class="day">Tue</div>
+              <div class="forecast">
+                <img src="img/rain.png" class="weatherIcon" />50°
+              </div>
+            </div>
+            <div class="days wed">
+              <div class="day">Wed</div>
+              <div class="forecast">
+                <img src="img/snow1.png" class="weatherIcon" />20°F
+              </div>
+            </div>
+            <div class="days thur">
+              <div class="day">Thur</div>
+              <div class="forecast">
+                <img src="img/sun1.png" class="weatherIcon" />76°
+              </div>
+            </div>
+            <div class="days fri">
+              <div class="day">Fri</div>
+              <div class="forecast">
+                <img src="img/cloud.png" class="weatherIcon" />66°
+              </div>
+            </div>
+            <div class="days sat">
+              <div class="day">Sat</div>
+              <div class="forecast">
+                <img src="img/cloud.png" class="weatherIcon" />63°
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>

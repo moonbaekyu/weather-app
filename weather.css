@@ -1,0 +1,173 @@
+body {
+    font-family: 'Klee One', cursive;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Mali', cursive;
+}
+
+.background {
+    background-image: linear-gradient(#F4B58E, #F1A596, #F09999, #EE8F9C);
+}
+
+.citySearch {
+    font-size: 25px;
+    color: #5a6275;
+}
+
+.searchBtn:hover {
+    color: black;
+}
+
+.searchBar {
+    padding: 30px 15px 0 35px;
+}
+
+.searchInput {
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 12px 50% 12px 5px;
+    background-color: rgb(255, 255, 255, 0.4);
+    /* background-color: transparent */
+}
+
+.todayDate {
+    color: #5a6275;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 35px;
+    font-weight: 300;
+}
+
+.currentTime {
+    color: #5a6275;
+    font-size: 15px;
+    margin-left: 35px;
+}
+
+.sunImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top: 10%;
+}
+
+.weatherBlock {
+    margin: 20px 0 20px 0;
+}
+
+.city {
+    color: #484e5e;
+    text-align: center;
+    margin: 0;
+}
+
+.temperatureSpan {
+    display: block;
+    text-align: center;
+}
+
+.temp {
+    color: #484e5e;
+    font-weight: 400;
+    font-size: 70px;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.celsius {
+    color: #484e5e;
+    font-weight: 300px;
+    font-size: 65px;
+    letter-spacing: -3px;
+}
+
+.units {
+    font-size: 20px;
+    color: #5a6275;
+    transition: 0.3s;
+}
+
+.units:link {
+    text-decoration: none;
+}
+
+.units:hover {
+    color: #484e5e;
+}
+
+.weatherDesc {
+    color: #484e5e;
+    text-align: center;
+    font-size: 25px;
+}
+
+.atmosphere {
+    text-align: center;
+    color: #5a6275;
+    font-size: 25px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.hLine {
+    border-right: 1px solid #fffaf15c;
+}
+
+.descNum {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.weekBox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.week {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    color: #5a6275;
+    font-weight: 330;
+    border-radius: 20px;
+    border: 2px, solid, rgb(253, 226, 226, 0.1)
+}
+
+
+.weekBackground {
+    padding: 5px 10px 10px 0;
+    font-size: 25px;
+
+}
+
+.weatherIcon {
+    width: 30px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.days {
+    flex: 0 0 auto;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px;
+    background: #fffaf15c;
+    font-size: 18px;
+}
+
+.fri {
+    background: #fff7e9d9;
+}
